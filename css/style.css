@@ -1,0 +1,27 @@
+:root{
+    --fundo: #f1f5f9;
+    --principal: #0e7490;
+    --hover: #155e75;
+    --card: #ffff;
+    --texto: #1e293b;
+}
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--fundo);
+    color: var(--texto);
+}
+header{
+    background-color: var(--card);
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1{
+    color: var(--principal);
+}
