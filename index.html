@@ -8,13 +8,21 @@
 </head>
 <body>
     <main class="container">
-        <h1>Gerador de Frases</h1>
+        <h1>Personalizador de Texto</h1>
 
-        <button id="botaoCriar">Criar Frase</button>
-        <br><br>
-        <button id="botaoApagar">Apagar Tudo</button>
-        <br><br>
-        <p id="retorno"></p>
+        <form id="formEstilo">
+            <label for="campoCor">Cor (nome ou hex):</label>
+            <br><br>
+            <input type="text" id="campoCor" placeholder="ex: red ou #fffff"><br><br>
+
+            <label for="campoPadding">Padding (px):</label><br><br>
+            <input type="number" id="campoPadding" placeholder="ex: 10"><br><br>
+
+            <label for="campoTamanho">Tamanho da Letra (px):</label><br><br>
+            <input type="number"  id="campoTamanho" placeholder="ex: 20"><br><br>
+            <button type="submit">Aplicar</button>
+        </form>
+        <p id="retorno">Esta é sua mensagem!</p>
     </main>   
 
     <script src="js/script.js"></script>
