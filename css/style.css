@@ -1,19 +1,12 @@
-#formCalculo{
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    max-width: 280px;
-    margin: 20px auto;
+.pai{
+    width: 400px;
+    background-color: #e5e7eb;
+    padding: 10px;
 }
-#formCalculo input{
-    padding: 8px;
-    border: 1px solid #d1d5bd;
-    border-radius: 8px;
-    font-size: 16px;
-}
-#resultadoCalculo{
-    font-size: 20px;
-    font-weight: bold;
-    color: #2563eb;
-    text-align: center;
+
+.filho{
+    width: 50%;
+    background-color: #2563eb;
+    color: white;
+    padding: 10px;
 }
