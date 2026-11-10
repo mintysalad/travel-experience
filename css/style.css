@@ -1,12 +1,10 @@
-.pai{
-    width: 400px;
-    background-color: #e5e7eb;
-    padding: 10px;
+h1{
+    font-size: 1rem; /*1 rem = 16px */
 }
 
-.filho{
-    width: 50%;
-    background-color: #2563eb;
-    color: white;
-    padding: 10px;
+h2{
+    font-size: 2rem;
+}
+p{
+    font-size: 3rem;
 }
