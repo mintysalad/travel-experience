@@ -10,44 +10,53 @@
 
     <header>
         <h1>👕Loja de Roupas👚</h1>
-    </header> 
-        <main class="carrossel">
+    </header>    
+    <main class="area-contato">
+        <form class="formulario">
+            <h2>Fale com a gente</h2><br>
+            <label for="nome">Nome:</label>
+            <input type="text" placeholder="Digite seu nome" id="nome" requiredm minlength="3"><br><br>
+            <label for="email">E-mail:</label><br><br>
+            <input type="email" placeholder="seu@email.com" id="email" required><br><br>
+            <label for="telefone">Telefone:</label><br><br>
+            <input type="tel" placeholder="(51) 99999-9999" id="telefone"><br><br>
+            <label for="nascimento">Data de Nascimento</label><br><br>
+            <input type="date" id="nascimento" required><br><br>
+            <label for="tamanho">Tamanho (número de 34-46)</label><br><br>
+            <input type="number" id="tamanho" min="34" max="46" step="2" placeholder="ex: 38"><br><br>
+            <label for="produto">Produto de interesse</label>
+            <select id="produto" required>
+                <option value="">Escolha um produto</option>
+                <option value="camiseta">Camiseta</option>
+                <option value="calca">Calça</option>
+                <option value="jaqueta">Jaqueta</option>
+                <option value="sapato">Sapato</option>
+                <option value="vestido">Vestido</option>
+            </select>
+            <fieldset>
+                <legend>Forma de contato preferida</legend>
+                <label><input type="radio" name="contato" value="email" checked>E-mail</label>
+                <label><input type="radio" name="contato" value="telefone" checked>Telefone</label>
+                <label><input type="radio" name="contato" value="whatsapp" checked>Whatsapp</label>
 
-            <div class="trilho">
-                
-                <div class="slide">
-                    <img src="img/blusa" alt="blusa">
-                    <h2>Camiseta</h2>
-                    <p class="preco">R$ 67,99</p>
-                </div> 
+            </fieldset>
+            <fieldset>
 
-                <div class="slide">
-                    <img src="img/calça.jpg" alt="calca">
-                    <h2>Calça</h2>
-                    <p class="preco">R$ 49,99</p>
-                </div>
+                <legend>Interesses</legend>
+                <label><input type="checkbox" name="interesse" value="promocoes">Promoções</label>
+                <label><input type="checkbox" name="interesse" value="novidades">Novidades</label>
+                <label><input type="checkbox" name="interesse" value="eventos">eventos</label>
+            
+            </fieldset>
+            
+            <label for="mensagem">Mensagem</label>
+            <textarea name="mensagem" id="mensagem" placeholder="Escreva sua dúvida" maxlength="200"></textarea>
 
-                <div class="slide">
-                    <img src="img/jaqueta.jpg" alt="jaqueta">
-                    <h2>Jaqueta</h2>
-                    <p class="preco">R$ 59, 99</p>
-                </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
 
-                <div class="slide">
-                    <img src="img/sapato.jpg" alt="sapato">
-                    <h2>Sapato</h2>
-                    <p class="preco">R$ 99,99</p>
-                </div>
-
-                <div class="slide">
-                    <img src="img/vestido.jpg" alt="vestido">
-                    <h2>Vestido</h2>
-                    <p class="preco">R$ 199,99</p>
-                </div>
-                </div>
-        </main>
     
 
-    <script src="js/script.js"></script>
 </body>
 </html>
